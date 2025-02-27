@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.navbar
+{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    background: #eee;
+    width: 100%;
+}
+.menu ul
+{
+    display: flex;
+    gap: 20px;
+}
+.menu ul li
+{
+    list-style: none;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #0073cf;
+    position: relative;
+}
+.menu ul li a:hover
+{
+    color: #004781;
+}
+.menu ul li a::after
+{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background: linear-gradient(-60deg,#0073cf,#fff);
+    bottom: 3px;
+    left: 0;
+    transition: 0.8s;
+}
+.menu ul li a:hover::after
+{
+    width: 100%;
+}
+.menu span
+{
+    font-size: 25px;
+    color: #0073cf;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+.navbar #menubar
+{
+    font-size: 25px;
+    color: #0073cf;
+    cursor: pointer;
+    display: none;
+}
+.logo
+{
+    font-weight: 800;
+    font-size: 25px;
+    color: #0073cf;
+}
+#homemainpage
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(60deg,#fff 50%,#0073cf 50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+#homemainpage img
+{
+    height: 600px;
+}
+#homemainpage .homeheading
+{
+    width: 500px;
+}
+#homemainpage .homeheading p
+{
+    margin: 10px 0;
+}
+#homemainpage .homeheading a button
+{
+    background: #fff;
+    color: #0073cf;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#homemainpage .homeheading a button:hover
+{
+    background: transparent;
+    color: #fff;
+}
